@@ -1,0 +1,75 @@
+.workerContainer {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.workerHero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+#workerPicture {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.workerTitle {
+    display: flex;
+    position: absolute;
+    z-index: 99;
+    align-content: center;
+    justify-content: center;
+}
+
+.workerTitle h3 {
+    color: white;
+    font-size: 32px;
+}
+
+.workerBody {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.workerInfos {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.workerDesc {
+    display: flex;
+    padding: 20px;
+}
+
+.workerCalendar{
+    display: flex;
+    width:auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.workerToggleBtn {
+    display: flex;
+    border:none;
+    height: 40px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,0,0,0.35);
+    color: white;
+    font-size: 14px;
+}
+
+.workerToggleBtn:hover {
+    cursor: pointer;
+}

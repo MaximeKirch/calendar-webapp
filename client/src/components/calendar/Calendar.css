@@ -1,0 +1,154 @@
+
+.calendar {
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .calendarHeader {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .calendarBody {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .tableHeader {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .weekday {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .tableContent {
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+  
+  .calendar-day {
+    width: 125px;
+    height: 75px;
+    position: relative;
+    border: 1px solid #a6a6a6;
+  }
+  
+  .calendar-day:hover {
+    background-color: rgba(0,0,0,.10);
+  }
+  
+  .calendar-day p {
+    position: absolute;
+    right: 10px;
+    color: #a6a6a6;
+  }
+  
+  .current p {
+    color: #000000;
+  }
+  
+  .selected p {
+    color: #cc0000;
+    font-weight: bold;
+  }
+
+  .calendarPopup {
+    width: 70%;
+    display: flex;
+  }
+
+  .popupContainer {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+  }
+
+  .popupTitle {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(51,51,51,0.9);
+  }
+  
+  .popupDate {
+    color: #FFF;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .popupClose {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+    padding-right: 20px;
+  }
+ 
+  .hourLine {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    width: 100%;
+
+  }
+
+  .hourLineSelected {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;;
+    width: 100%;
+    background-color: #a6a6a6;
+  }
+
+  .hourLine :hover {
+    background-color: rgba(0,0,0,.10);
+    width: 100%;
+  }
+
+  .singleHour {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 30px;
+    padding-top: 20px;
+  }
+
+  .singleHourComplete {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height:30px;
+    padding-top:20px;
+    background : rgba(255,0,0,.20);
+    width: 100%;
+  }
+
+  .popupText {
+    text-align: center;
+  }
+
+  

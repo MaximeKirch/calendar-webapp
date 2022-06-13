@@ -1,0 +1,105 @@
+.profile {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.profileContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.profileHeader {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilePicture {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding-top: 20px;
+}
+
+.profileDetails {
+    margin : 0px 20px;
+    padding: 10px;
+}
+
+.profileInformations {
+    background-color: rgba(255,0,0,0.15);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.profileAbout {
+    padding: 10px;
+}
+
+.futureVisitsContainer {
+    padding: 20px;
+}
+
+.pastVisitsContainer {
+    padding: 20px;
+}
+
+
+.visitPreviewContainer {
+    width: 200px;
+    height: auto;
+    margin: 10px 20px;
+    background-color: rgba(255,0,0,0.15);
+    display: flex;
+    justify-content: center;
+}
+
+.visitPreviewHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+}
+
+.visitPreviewHeader img {
+    height: 150px;
+    width: 150px;
+    padding: 20px;
+}
+
+.modifyInput {
+    background-color : transparent;
+    border:none;
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 1px solid black;
+    width: 100px;
+}
+
+.modifyBtn {
+    background-color: orange;
+    border: none;
+    margin: 10px;
+    padding: 10px;
+    border-radius:25px;
+}
+
+.cancelModifyBtn {
+    border: none;
+    background: transparent;
+    width: 150px;
+}
+
+.textareaModifyContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.textareaModify {
+    width: auto;
+    height: 200px;
+    margin-bottom: 20px;
+}
