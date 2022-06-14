@@ -54,9 +54,9 @@ router.post('/create', async(req,res) => {
 
 // Update user values
 
-router.patch('/:id', async(req,res) => {
+router.put('/:id', async(req,res) => {
     const {id} = req.params
-    const worker = await User.findById({_id : id})
+    const worker = await Worker.findById({_id : id})
 
     // Get values to update
 

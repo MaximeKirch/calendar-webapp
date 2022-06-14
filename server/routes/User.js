@@ -54,7 +54,7 @@ router.post('/create', async(req, res) => {
 
  // Update user values
 
-router.patch('/:id', async(req, res) => {
+router.put('/:id', async(req, res) => {
     const {id} = req.params
     const user = await User.findById({_id : id})
 
