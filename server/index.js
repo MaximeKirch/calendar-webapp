@@ -2,6 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const dotenv = require('dotenv')
 const users = require('./routes/User')
+const workers = require('./routes/Worker')
 const PORT = process.env.PORT || 3001
 dotenv.config()
 
@@ -14,6 +15,7 @@ mongoose
 const app = express()
 app.use(express.json())
 app.use('/users', users)
+app.use('/workers', workers)
 
 app.get('/api', (req, res) => {
   res.send('Hello from server !')
