@@ -5,6 +5,7 @@ const schema = mongoose.Schema({
   lastname: { type: String, required: true },
   email : {type: String, required: true},
   password: {type:String, select: false, required: true},
+  birthdate: {type:String, select: false, required: false},
   location: { type: String, required: true },
   address: { type: String, required: true },
   zip: { type: String, required: true },

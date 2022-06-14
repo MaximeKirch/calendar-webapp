@@ -25,6 +25,7 @@ router.post('/create', async(req, res) => {
     const {firstname} = req.body
     const {lastname} = req.body
     const {address} = req.body
+    const {birthdate} = req.body
     const {email} = req.body
     const {password} = req.body
     const {zip} = req.body
@@ -44,6 +45,7 @@ router.post('/create', async(req, res) => {
         email: email,
         password: password,
         address: address,
+        birthdate: birthdate,
         zip:zip,
         location:location,
         favorites:favorites,
@@ -66,6 +68,7 @@ router.put('/:id', async(req, res) => {
     const {firstname} = req.body
     const {lastname} = req.body
     const {address} = req.body
+    const {birthdate} = req.body
     const {zip} = req.body
     const {location} = req.body
     const {favorites} = req.body
@@ -82,6 +85,7 @@ router.put('/:id', async(req, res) => {
     if(favorites) user.favorites = favorites
     if(bio) user.bio = bio
     if(picture) user.picture = picture
+    if(birthdate) user.birthdate = birthdate
 
     await user.save()
     res.status(201).json(user)
