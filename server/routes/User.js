@@ -25,13 +25,15 @@ router.post('/create', async(req, res) => {
     const {firstname} = req.body
     const {lastname} = req.body
     const {address} = req.body
+    const {email} = req.body
+    const {password} = req.body
     const {zip} = req.body
     const {location} = req.body
     const {favorites} = req.body
     const {bio} = req.body
     const {picture} = req.body
 
-     if(!firstname || !lastname || !address || !zip || !location ) {
+     if(!firstname || !lastname || !address || !zip || !location || !password || !email ) {
          res.status(400).send('Une information est manquante ou incomplète.')
          return
      }
@@ -39,6 +41,8 @@ router.post('/create', async(req, res) => {
     const newUser = new User({
         firstname:firstname,
         lastname:lastname,
+        email: email,
+        password: password,
         address: address,
         zip:zip,
         location:location,

@@ -21,6 +21,8 @@ router.get('/:id', async(req,res) => {
 router.post('/create', async(req,res) => {
     const {firstname} = req.body
     const {lastname} = req.body
+    const {password} = req.body
+    const {email} = req.body
     const {location} = req.body
     const {address} = req.body
     const {zip} = req.body
@@ -29,7 +31,7 @@ router.post('/create', async(req,res) => {
     const {sector} = req.body
     const {openingHours} = req.body
 
-    if(!firstname || !lastname || !address || !zip || !location || !sector || !bio || !openingHours) {
+    if(!firstname || !lastname || !address || !zip || !location || !sector || !bio || !openingHours || !password || !email) {
         res.status(400).send('Une information est manquante ou incomplète.')
         return
     }
@@ -37,6 +39,8 @@ router.post('/create', async(req,res) => {
     const newWorker = new Worker({
         firstname : firstname,
         lastname: lastname,
+        password : password, 
+        email: email,
         address: address,
         zip: zip,
         location: location,
