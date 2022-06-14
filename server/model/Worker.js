@@ -21,6 +21,22 @@ const schema = mongoose.Schema({
       }
     },
   ],
+  appointments : [
+    {
+        futures : [{
+            "date" : String,
+            "hour" : String,
+            "idWorker" : String,
+            "idUser" : String
+        }], 
+        pasts : [{
+            "date" : String,
+            "hour" : String,
+            "idWorker" : String,
+            "idUser" : String
+        }]
+    }
+  ]
 })
 
 module.exports = mongoose.model('worker', schema)
